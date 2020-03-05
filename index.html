@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Report Card</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<!--custom css styles-->
+	<link rel="stylesheet" href="index.css" type="text/css"/>
+	<!--fontawesome-->
+	<link rel="stylesheet" href="fontawesome/css/all.min.css" type="text/css"/>
+	<!--favicon-->
+	<!-- <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/> -->
+</head>
+<body>
+
+	<div id="student_list">
+		<input type="text" placeholder="search">
+		<select>
+			<option value="fiveA">5A</option>
+			<option value="fiveB">5B</option>
+			<option value="lower6A">L6A</option>
+			<option value="lower6B">L6B</option>
+			<option value="upper6">U6</option>
+			<option value="form1">Form 1</option>
+			<option value="form2">Form 2</option>
+			<option value="form3">Form 3</option>
+		</select>
+		<button>Add Student</button>
+		<div>
+			<!-- <p><span>Faddal Ibrahim</span> <i class="fas fa-trash"></i></p>
+			<p><span>Tuahir Mahmoud</span> <i class="fas fa-trash"></i></p>
+			<p><span>Aziz Muhammad</span> <i class="fas fa-trash"></i></p>
+			<p><span>Bengal Sylla</span> <i class="fas fa-trash"></i></p>
+			<p><span>Salamatu Lukma</span> <i class="fas fa-trash"></i></p>
+			<p><span>Salma Sumaila</span> <i class="fas fa-trash"></i></p> -->
+		</div>
+	</div>
+
+	<div id="report_body">
+		<div id="heading">
+			<h1>HAMDANIYYA ISLAMIC SCHOOL</h1>
+			<h2>REPORT CARD</h2>
+			<h2>SECOND SEMESTER 2019/2020</h2>
+		</div>
+
+		<div id="student_info">
+		  <p>NAME: <input type='text' size='50' placeholder='Name Of Student'></p>
+		  <p> CLASS: <input type='text' size='10' placeholder="Class"></p>
+		</div>
+
+		<div id="table">
+		  <table>
+		    <!-- HEADINGS -->
+		    <tr>
+		      <th>SUBJECT</th>
+		      <th>CLASS SCORE (50%)</th>
+		      <th>EXAM SCORE (50%)</th>
+		      <th>TOTAL SCORE (100%)</th>
+		      <th>REMARKS</th>
+		    </tr>
+
+		    <!-- QURAN -->
+		    <tr>
+		      <td>QURAN</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- HIFZ -->
+		    <tr>
+		      <td>HIFZ</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- SEERA -->
+		    <tr>
+		      <td>SEERA</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- HADITH -->
+		    <tr>
+		      <td>HADITH</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- FIQH -->
+		    <tr>
+		      <td>FIQH</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- LUGGA -->
+		    <tr>
+		      <td>LUGGA</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- TAJWEED -->
+		    <tr>
+		      <td>TAJWEED</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- TAWHEED -->
+		    <tr>
+		      <td>TAWHEED</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- NAHWU -->
+		    <tr>
+		      <td>NAHWU</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- TAFSEER -->
+		    <tr>
+		      <td>TAFSEER</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+
+		    <!-- INSHA -->
+		    <tr>
+		      <td>INSHA</td>
+		      <td><input type="text"></td>
+		      <td><input type="text"></td>
+		      <td><span></span></td>
+		      <td><span></span></td>
+		    </tr>
+		  </table>
+		</div>
+		
+	</div>
+
+
+	<div id="actions">
+		<i class="far fa-save"></i>
+		<!-- <i class="far fa-file-csv"></i> -->
+		<i class="fas fa-share"></i>
+		<i class="fas fa-times"></i>
+		<i class="far fa-clone"></i>
+	</div>
+
+	<div id="add_student_form">
+		<div>
+			<input type="text" name="" placeholder="student name">
+			<select>
+				<option value="fiveA">5A</option>
+				<option value="fiveB">5B</option>
+				<option value="lower6A">L6A</option>
+				<option value="lower6B">L6B</option>
+				<option value="upper6">U6</option>
+				<option value="form1">Form 1</option>
+				<option value="form2">Form 2</option>
+				<option value="form3">Form 3</option>
+			</select>
+			<button>Add</button>
+		</div>
+	</div>
+
+
+	<!-- <div>
+		nothing
+	</div> -->
+
+	
+
+
+	<!--javascript-->
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

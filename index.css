@@ -1,0 +1,191 @@
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /*flex-flow: column;*/
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* STUDENT LIST */
+#student_list{
+	height: 100vh;
+	width: 13vw;
+	background-color: #ddd;
+	/*padding: 0.8rem;*/
+	/*justify-self: flex-start;*/
+	/*align-self: flex-start;*/
+	padding: 1rem;
+}
+
+#student_list input{
+	padding: 0.5rem;
+	/*border-radius: 0.3rem;*/
+	/*border: none;*/
+	outline-color: #3bbced;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+#student_list select{
+	width: 100%;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	outline-color: #3bbced;
+}
+
+#student_list option{
+	padding: 0.5rem;
+}
+
+#student_list button{
+	margin-bottom: 4rem;
+	width: 100%;
+	background-color: #3bbced;
+	color: white;
+	outline: none;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+}
+
+#student_list button:hover{
+	background-color: #1c8adb;
+}
+
+/*#student_list select:focus{
+	background-color: #ddd;
+}*/
+
+#student_list p{
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#student_list i{
+	color: red;
+	cursor: pointer;
+}
+
+#report_body{
+	height: 100vh;
+	display: flex;
+	flex-flow: column;
+	/*align-items: space-around;*/
+	justify-content: space-evenly;
+}
+
+/* HEADING */
+#heading h1, #heading h2, #heading h3{
+	text-align: center;
+}
+
+
+/* STUDENT INFO */
+#student_info p:first-child{
+	margin-bottom: 1.5rem;
+}
+
+
+#student_info input{
+	padding: 0.5rem;
+}
+/* TABLE */
+
+table{
+  border-collapse: collapse;
+}
+
+table input{
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+td{
+  padding: 0.5rem;
+  border-right: 0.1rem solid white;
+  border-left: 0.1rem solid white;
+  text-align: center;
+}
+
+th{
+  padding: 0.5rem;
+  border-right: 0.1rem solid white;
+}
+
+tr:nth-child(even){
+  background-color: #ddd;
+}
+
+tr:nth-child(even) input{
+  background-color: #ddd;
+}
+
+th{
+  background-color: #3bbced;
+  color: white;
+  border-bottom: 0.1rem solid white;
+}
+
+
+/* ACTIONS */
+ #actions{
+	font-size: 2rem;
+	display: flex;
+	flex-flow: column;
+	margin-right: 1.5rem;
+} 
+
+#actions i{
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+#add_student_form{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+	background-color: rgba(13,12,14,0.7);
+	display: none;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#add_student_form input, 
+#add_student_form select,
+#add_student_form button{
+	padding: 0.5rem;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+#add_student_form button{
+	background-color: #3bbced;
+	outline: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+#add_student_form button:hover{
+	background-color: #1c8adb;
+}
+
+
+
